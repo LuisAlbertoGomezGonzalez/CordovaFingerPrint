@@ -1,0 +1,34 @@
+<resources>
+    <string name="autenticar">Autenticar</string>
+    <string name="autenticar_personalizado">Autenticar Personalizado (3 intentos)</string>
+    <string name="writeFingerprint">Registrar Huella</string>
+
+    <string name="dialog_huella_titulo">Validación de huella</string>
+    <string name="dialog_huella_mensaje">Por favor, introduzca la huella para continuar</string>
+    <string name="fingerprint_hint">Sitúe el dedo registrado por encima del lector de huella sin presionar. Muévalo arriba y abajo levemente.</string>
+
+    <string name="password_titulo">Validación por contraseña</string>
+    <string name="password_description">Por favor, introduzca la contraseña para continuar.</string>
+    <string name="password">Contraseña</string>
+
+    <string name="configuracion_seguridad_registre_huella">Vaya a \'Huella digital\' y registre al menos una huella digital</string>
+    <string name="configuracion_seguridad_configure_bloqueo">No se ha configurado la pantalla de bloqueo. Vaya a \'Huella digital\' para configurarlo</string>
+
+    <string name="fingerprint_not_recognized">Huella no reconocida. Inténtelo de nuevo.</string>
+    <string name="fingerprint_success">Huella reconocida.</string>
+
+    <string name="ok">Ok</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="use_password">Usar contraseña</string>
+
+    <string name="atencion">¡Atención!</string>
+    <string name="dispositivo_sin_lector_huellas">El dispositivo no tiene lector de huellas.</string>
+
+    <string name="new_fingerprint_enrolled_description">Debe introducir su contraseña cuando se reinicia el dispositivo o se añade una nueva huella digital.</string>
+    <string name="use_fingerprint_in_future">Utilizar la atenticación por huella en el futuro</string>
+
+    <string name="use_fingerprint_to_authenticate_key">use_fingerprint_to_authenticate_key</string>
+    <string name="configuracion_seguridad_acceda_huella_digital">Acceda a \'Huella digital\'</string>
+</resources>

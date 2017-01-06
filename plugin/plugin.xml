@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.agomgon.artifactory.fingerprintplugin"
+    version="0.1.0">
+    <name>FingerPrint</name>
+    <description>Huella digital validador y escritor</description>
+    <license>Apache License</license>
+    <keywords>cordova,fingerprint</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/FingerPrintPlugin.js" name="FingerPrintPlugin">
+        <clobbers target="FingerPrintPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FingerPrintPlugin" >
+                <param name="android-package" value="com.agomgon.mobile.artifactory.fingerprint.FingerPrintPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/agomgon/mobile/artifactory/fingerprint/FingerPrintPlugin.java" target-dir="src/com/agomgon/mobile/artifactory/fingerprint/" />
+        <source-file src="src/android/com/agomgon/mobile/artifactory/fingerprint/CommomMessages.java" target-dir="src/com/agomgon/mobile/artifactory/fingerprint/" />
+        <source-file src="src/android/com/agomgon/mobile/artifactory/fingerprint/FingerprintDialogFragment.java" target-dir="src/com/agomgon/mobile/artifactory/fingerprint/" />
+        <source-file src="src/android/com/agomgon/mobile/artifactory/fingerprint/FingerprintUiHelper.java" target-dir="src/com/agomgon/mobile/artifactory/fingerprint/" />
+        <source-file src="src/android/com/agomgon/mobile/artifactory/fingerprint/IFingerPrintPlugin.java" target-dir="src/com/agomgon/mobile/artifactory/fingerprint/" />
+        
+        <resource-file src="res/drawable/ic_fingerprint_error.xml" target="res/drawable/ic_fingerprint_error.xml" />
+        <resource-file src="res/drawable/ic_fingerprint_success.xml" target="res/drawable/ic_fingerprint_success.xml" />
+        <resource-file src="res/drawable-hdpi/ic_fp_40px.png" target="res/drawable-hdpi/ic_fp_40px.png" />
+        <resource-file src="res/drawable-mdpi/ic_fp_40px.png" target="res/drawable-mdpi/ic_fp_40px.png" />
+		<resource-file src="res/drawable-xhdpi/ic_fp_40px.png" target="res/drawable-xhdpi/ic_fp_40px.png" />
+		<resource-file src="res/drawable-xxhdpi/ic_fp_40px.png" target="res/drawable-xxhdpi/ic_fp_40px.png" />		
+		<resource-file src="res/drawable-xxxhdpi/ic_fp_40px.png" target="res/drawable-xxxhdpi/ic_fp_40px.png" />
+
+        <resource-file src="res/layout/layoutexample.xml" target="res/layout/layoutexample.xml" />
+        <resource-file src="res/layout/activity_main.xml" target="res/layout/activity_main.xml" />
+        <resource-file src="res/layout/fingerprint_dialog_content.xml" target="res/layout/fingerprint_dialog_content.xml" />
+        <resource-file src="res/layout/fragment_fingerprint_dialog.xml" target="res/layout/fragment_fingerprint_dialog.xml" />
+
+        <resource-file src="res/values/pluginstrings.xml" target="res/values/pluginstrings.xml" />
+        <resource-file src="res/values/colors.xml" target="res/values/colors.xml" />
+        <resource-file src="res/values/dimens.xml" target="res/values/dimens.xml" />
+        <resource-file src="res/values/styles.xml" target="res/values/styles.xml" />
+
+    </platform>
+
+</plugin>
